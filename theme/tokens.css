@@ -1,0 +1,92 @@
+:root {
+  /* ── Brand ── */
+  --tb-primary: #1677ff;
+  --tb-primary-hover: #3d86ff;
+  --tb-primary-active: #0068ed;
+  --tb-primary-fg: #1a1a1a;
+  --tb-primary-bg: #1677ff1a;
+
+  --tb-secondary: #722ed1;
+  --tb-secondary-bg: #722ed11a;
+
+  --tb-accent: #13c2c2;
+  --tb-accent-bg: #13c2c21f;
+
+  /* ── Surface & text ── */
+  --tb-surface: #ffffff;
+  --tb-surface-raised: #f5f5f5;
+  --tb-text: #1a1a1a;
+  --tb-text-secondary: #1a1a1a;
+  --tb-text-muted: #1a1a1a;
+
+  /* ── Borders ── */
+  --tb-border: #1a1a1a26;
+  --tb-border-light: #1a1a1a14;
+
+  /* ── Shadows ── */
+  --tb-shadow-sm: 0 1px 2px #1a1a1a0f;
+  --tb-shadow-md: 0 4px 12px #1a1a1a1a;
+
+  /* ── Primary ramp (50-900) ── */
+  --tb-primary-50: #e1f1ff;
+  --tb-primary-100: #c2d6ff;
+  --tb-primary-200: #a3bbff;
+  --tb-primary-300: #82a1ff;
+  --tb-primary-400: #5d89fe;
+  --tb-primary-500: #1677ff;
+  --tb-primary-600: #005ad6;
+  --tb-primary-700: #0045bf;
+  --tb-primary-800: #00319e;
+  --tb-primary-900: #001e7e;
+
+  /* ── Status colours (contrast-checked against surface) ── */
+  --tb-success: #16a34a;
+  --tb-warning: #d97706;
+  --tb-danger: #dc2626;
+}
+[data-theme="dark"] {
+  /* ── Brand ── */
+  --tb-primary: #3d86ff;
+  --tb-primary-hover: #5595ff;
+  --tb-primary-active: #1b77ed;
+  --tb-primary-fg: #1a1a1a;
+  --tb-primary-bg: #3d86ff1a;
+
+  --tb-secondary: #9c52fb;
+  --tb-secondary-bg: #9c52fb1a;
+
+  --tb-accent: #37d3d3;
+  --tb-accent-bg: #37d3d31f;
+
+  /* ── Surface & text ── */
+  --tb-surface: #101014;
+  --tb-surface-raised: #18181b;
+  --tb-text: #f5f5f7;
+  --tb-text-secondary: #f5f5f7;
+  --tb-text-muted: #f5f5f7;
+
+  /* ── Borders ── */
+  --tb-border: #f5f5f726;
+  --tb-border-light: #f5f5f714;
+
+  /* ── Shadows ── */
+  --tb-shadow-sm: 0 1px 2px #f5f5f70f;
+  --tb-shadow-md: 0 4px 12px #f5f5f71a;
+
+  /* ── Primary ramp (50-900) ── */
+  --tb-primary-50: #dff3ff;
+  --tb-primary-100: #c0d8ff;
+  --tb-primary-200: #a1bdff;
+  --tb-primary-300: #81a4ff;
+  --tb-primary-400: #5e8bf2;
+  --tb-primary-500: #3d86ff;
+  --tb-primary-600: #005cc9;
+  --tb-primary-700: #0047b2;
+  --tb-primary-800: #003392;
+  --tb-primary-900: #002073;
+
+  /* ── Status colours (contrast-checked against surface) ── */
+  --tb-success: #16a34a;
+  --tb-warning: #d97706;
+  --tb-danger: #dc2626;
+}

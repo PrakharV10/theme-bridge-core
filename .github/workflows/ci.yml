@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [18, 20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      # The package audits its own default palette: this fails the build if a
+      # readable pair regresses below AA.
+      - name: Contrast audit (self-check)
+        run: node dist/cli.js --primary "#7c3aed" --surface "#ffffff" --text "#1a1a1a" --check --out /tmp/ci-theme

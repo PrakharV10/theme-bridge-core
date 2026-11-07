@@ -1,0 +1,62 @@
+{
+  "name": "theme-bridge",
+  "version": "0.1.0",
+  "description": "One brand palette in, Ant Design + Tailwind v4 + CSS custom properties out. WCAG-checked, with tints, shades and a dark palette derived from the same five tokens.",
+  "keywords": [
+    "design-tokens",
+    "theme",
+    "antd",
+    "tailwind",
+    "css-variables",
+    "design-system",
+    "dark-mode",
+    "wcag"
+  ],
+  "license": "MIT",
+  "author": "Prakhar Varshney",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "theme-bridge": "./dist/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build",
+    "cli": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "chroma-js": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/chroma-js": "^3.1.2",
+    "@types/node": "^20",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
